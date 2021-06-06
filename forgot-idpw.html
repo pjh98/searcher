@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="team9" />
+    <meta name="Keywords" content="통합, 즐겨찾기, 북마크, 설정, 회원" />
+    <meta name="Description" content="searcher9 project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>searcher9 project</title>
+  </head>
+  <body>
+    <!--네비게이션바 시작-->
+    <nav class="nav">
+      <input type="checkbox" class="nav__cb" id="menu-cb" />
+      <div class="nav__content">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <span class="nav__item-text">
+              <a href="index.html">Home</a>
+            </span>
+          </li>
+          <li class="nav__item">
+            <span class="nav__item-text">
+              <a href="#">Bookmark</a>
+            </span>
+          </li>
+          <li class="nav__item">
+            <span class="nav__item-text">
+              <a href="#">Settings</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <label class="nav__btn" for="menu-cb"></label>
+    </nav>
+    <!--네비게이션바 끝-->
+    <section class="find-box">
+      <div class="note find-id mgn-b20">
+        <h2>Find ID</h2>
+        <p class="find-text mgn-b20">
+          회원정보에 입력하신 성함과 이메일 주소를 입력해주세요.
+        </p>
+        <table class="form-table">
+          <colgroup>
+            <col width="30%" />
+            <col width="*" />
+          </colgroup>
+          <tbody>
+            <tr class="join-form-name">
+              <th scope="row"><label for="">이름</label></th>
+              <td><input type="text" name="name" placeholder="김철수" /></td>
+            </tr>
+            <tr class="join-form-name">
+              <th scope="row">이메일 주소</th>
+              <td>
+                <input type="text" name="email" placeholder="zzz@naver.com" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="btn-blcok">
+          <a href="#" class="btn-cancel">취소</a>
+          <a href="#" class="btn-confirm">확인</a>
+        </p>
+      </div>
+
+      <div class="note find-pw">
+        <h2>Find PassWord</h2>
+        <p class="find-text mgn-b20">
+          회원님의 아이디와 회원 정보에 입력하신 정보를 입력해주세요.
+        </p>
+        <table class="form-table">
+          <colgroup>
+            <col width="30%" />
+            <col width="*" />
+          </colgroup>
+          <tbody>
+            <tr class="join-form-name">
+              <th scope="row">아이디</th>
+              <td><input type="text" name="id" /></td>
+            </tr>
+            <tr class="join-form-name">
+              <th scope="row"><label for="">이름</label></th>
+              <td><input type="text" name="name" placeholder="김철수" /></td>
+            </tr>
+            <tr class="join-form-name">
+              <th scope="row">이메일 주소</th>
+              <td>
+                <input type="text" name="email" placeholder="zzz@naver.com" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="btn-blcok">
+          <a href="#" class="btn-cancel">취소</a>
+          <a href="#" class="btn-confirm">확인</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+1. html / start.html : 처음 시작시 링크연결
+: 발표 할때 시선 사로잡기 위해서 a태그 클릭으로 index.html이동
+
+2. html / index.html : 미로그인시 메인화면
+: index.html에서 로그인 및 회원가입 기능 
+네비게이션은 순서대로 index.html, index_main.html, settings.html 로 연결
+
+3. html / forgot-idpw.html : 아이디, 비밀번호 찾기 페이지
+: index.html에서 로그인 부분에 id/pw찾기로 이동 되는 페이지
+
+4. html / index_main_no.html : 로그인환경에서 아무런 url설정이 없을 때
+: 회원가입하고 첫 페이지 이거나 설정한 url이 없을 때 페이지
+
+5. html / index_main.html : 로그인시 메인화면
+: 회원이 로그인했을때 보여지는 페이지로 북마크 된 url만 보여주고 url명으로 간단한 검색만 가능하다.
+
+6. html / settings.html : 
+: 회원이 설정한url등을 보여주고 추가, 수정, 삭제, 조회등의 기능을 제공한다.
+
+7. html / search-roading.html 
+: 검색시 로딩 0.5초 이후에 refresh로 검색화면 이동 (메타태그5번째줄에서 url설정)
+: 통합검색을 통해 결과 페이지로 이동하는데 0.5초의 시간이후에 search-view.html로 이동
+
+8. html / search-view.html : 첫 통합검색 결과화면 
+: 통함검색을 통해서 나오는 페이지인데 분류별로 3개씩 보여준다
+
+9. html / search-view-more.html : 통합검색 더보기 결과화면 
+: search-view.html에서 더보기 버튼을 통해 보여지는 페이지로 해당 분류에 모든 검색결과를 보여준다.

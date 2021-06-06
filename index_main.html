@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Author" content="team9">
+<meta name="Keywords" content="통합, 즐겨찾기, 북마크, 설정, 회원">
+<meta name="Description" content="searcher9 project">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">  
+<link rel="stylesheet" type="text/css" href="css/main.css" />  
+<link rel="stylesheet" type="text/css" href="css/contents.css" />  
+<link rel="stylesheet" type="text/css" href="css/font-effect.css" />  
+<title>searcher9 project</title>
+<script  src="js/jquery.js"></script>
+<script  src="js/colResizable-1.6.js"></script>
+<script type="text/javascript">
+  $(function(){	
+    $("#normal").colResizable({
+      liveDrag:true, 
+      gripInnerHtml:"<div class='grip'></div>", 
+      draggingClass:"dragging", 
+            resizeMode:'fit'
+        });
+    });	
+</script>
+</head>
+<body class="main-body">
+<!--네비게이션바 시작-->
+    <nav class="nav">
+        <input type="checkbox" class="nav__cb" id="menu-cb"/>
+        <div class="nav__content">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <span class="nav__item-text">
+                <a href="index.html">Home</a>
+              </span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text">
+               <a href="#">Bookmark</a>
+              </span>
+            </li>
+            <li class="nav__item">
+              <span class="nav__item-text">
+                <a href="#">Settings</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <label class="nav__btn" for="menu-cb"></label>
+      </nav>
+<!--네비게이션바 끝-->
+
+<!--메인 상단 검색 시작-->
+<section id="wrapper">
+<h1>Wellcome Searcher9</h1>
+<div id="main-search">
+	<form>
+		<input type="text" id="search">
+		<input type="submit" class="solid" value="Search">
+	</form>
+</div>
+</section>
+<!--메인 상단 검색  끝-->
+
+<div class="select-classify">
+  <div class="d7">
+    <form>
+      <input type="text" placeholder="저장한 url명으로 검색해보세요.">
+      <button type="submit"></button>
+    </form>
+    </div>
+  </div>
+<!--메인 분류게시판 시작-->
+<section class="container login">
+  <!--로그인된 메인화면에서 분류게시판페이지 보여주기-->
+  <div class="center" >
+    <table id="normal" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <th>북마크</th>
+        <th>No.</th>
+        <th>1차 분류</th>
+        <th>2차 분류</th>
+        <th>url명 </th>
+        <th>url</th>
+      </tr>
+      <tr>
+        <td>
+          <!--checked 속성 사용해서 온오프-->
+          <input type="checkbox" id="switch1" checked="" switch="none"> 
+          <label for="switch1" data-on-label="On" data-off-label="Off"></label>
+        </td>
+        <td class="left">1</td>
+        <td>쇼핑</td>
+        <td>상의</td>
+        <td>네이버 남자 반팔티</td>
+        <td class="right">
+          <div class="links no-padding">
+            <p class="link-effect-7">
+                <a href="#" data-hover="url로 이동">바로가기</a>
+            </p>
+          </div> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="switch2" checked="" switch="none"> 
+          <label for="switch2" data-on-label="On" data-off-label="Off"></label>
+        </td>
+        <td class="left">2</td>
+        <td>데이트</td>
+        <td>맛집</td>
+        <td>수원역 초밥집</td>
+        <td class="right">
+          <div class="links no-padding">
+            <p class="link-effect-7">
+                <a href="#" data-hover="url로 이동">바로가기</a>
+            </p>
+          </div> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="switch3" checked="" switch="none"> 
+          <label for="switch3" data-on-label="On" data-off-label="Off"></label>
+        </td>
+        <td class="left">3</td>
+        <td>데이트</td>
+        <td>놀거리</td>
+        <td>에버랜드 주차 꿀팁</td>
+        <td class="right">
+          <div class="links no-padding">
+            <p class="link-effect-7">
+                <a href="#" data-hover="url로 이동">바로가기</a>
+            </p>
+          </div> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="switch4" checked="" switch="none"> 
+          <label for="switch4" data-on-label="On" data-off-label="Off"></label>
+        </td>
+        <td class="left">4</td>
+        <td>쇼핑</td>
+        <td>핸드폰</td>
+        <td>갤럭시 아이폰 비교</td>
+        <td class="right">
+          <div class="links no-padding">
+            <p class="link-effect-7">
+                <a href="#" data-hover="url로 이동">바로가기</a>
+            </p>
+          </div> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="switch5" checked="" switch="none"> 
+          <label for="switch5" data-on-label="On" data-off-label="Off"></label>
+        </td>
+        <td class="left bottom">5</td>
+        <td class="bottom">제태크</td>
+        <td class="bottom">코인</td>
+        <td class="bottom">비트코인</td>
+        <td class="bottom right">
+          <div class="links no-padding">
+            <p class="link-effect-7">
+                <a href="#" data-hover="url로 이동">바로가기</a>
+            </p>
+          </div> 
+        </td>
+      </tr>																	
+    </table> 
+</div>
+<!--메인 분류게시판 끝 -->
+    <!--페이징 시작---->
+    <div class="pager">
+      <a href="#" class="pre">
+          <div class="col">
+              <div class="con">
+                <div class="bar arrow-top-r"></div>
+                <div class="bar arrow-middle-r"></div>
+                <div class="bar arrow-bottom-r"></div>
+              </div>
+            </div>
+      </a>
+      <a href="#" class="next">
+          <div class="col">
+              <div class="con">
+               <div class="bar arrow-top"></div>
+               <div class="bar arrow-middle"></div>
+               <div class="bar arrow-bottom"></div>
+             </div>
+           </div>
+      </a>
+      <ul class="pagedots">
+          <!--현재 활성화된 페이지는 class를 activedot로 설정-->
+          <li class="activedot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">1</span>
+              </a>
+          </li>
+          <li class="dot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">2</span>
+              </a>
+          </li>
+          <li class="dot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">3</span>
+              </a>
+          </li>
+          <li class="dot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">4</span>
+              </a>
+          </li>
+          <li class="dot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">5</span>
+              </a>
+          </li>
+          <li class="dot">
+              <a href="#">
+                  <span class="bullet">•</span>
+                  <span class="tipbullet"><span></span></span>
+                  <span class="tiplabel">6</span>
+              </a>
+          </li>
+      </ul>		
+  </div>
+  <!--페이징 끝---->
+</section>
+
+</body>
+</html>
